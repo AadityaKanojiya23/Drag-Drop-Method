@@ -13,17 +13,6 @@ lists.forEach((list) => {
 
 rightbox.addEventListener('dragover', (e) => {
     e.preventDefault();
-    
-/*Browser by default kisi bhi element me drop allow nahi karta.
-
-Agar tu preventDefault() nahi lagayega, toh drop event properly kaam nahi karega.
-
-Easy language:
-
-Ye browser ko bolta hai:
-
-“Is area me drop allow karo.”*/
-
 
 });
 
@@ -43,8 +32,6 @@ leftbox.addEventListener('drop', () => {
     if (selected) {
         leftbox.appendChild(selected);
 
-       /* appendChild() ek JavaScript DOM method hai jo kisi element ko kisi parent element ke andar last position par add (ya move) karta hai.
-        Ye element ko copy nahi karta, balki usse ek jagah se uthake doosri jagah shift karta hai. */
 
         selected = null;
     }
