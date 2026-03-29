@@ -10,7 +10,6 @@ lists.forEach((list) => {
     });
 });
 
-
 rightbox.addEventListener('dragover', (e) => {
     e.preventDefault();
 
