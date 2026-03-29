@@ -3,7 +3,7 @@ let rightbox = document.querySelector('#right')
 let leftbox = document.querySelector('#left')
 
 let selected = null;
-
+ 
 lists.forEach((list) => {
     list.addEventListener('dragstart', (e) => {
         selected = e.target;
